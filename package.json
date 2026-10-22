@@ -1,0 +1,12 @@
+{
+  "name": "mot-nam-thuong-nhau",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Một cảnh mở đầu nhỏ, dành riêng cho chúng ta.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/serve.mjs dist"
+  }
+}

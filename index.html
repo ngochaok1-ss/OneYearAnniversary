@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#fff5f8" />
+    <meta name="description" content="Có một chút phép màu, tên là chúng mình. Một cuốn album dành riêng cho một năm thương nhau." />
+    <title>Một năm thương nhau · Chuyện chúng mình</title>
+    <link rel="icon" type="image/svg+xml" href="/public/heart.svg" />
+    <link rel="preload" href="/public/fonts/cormorant-regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/public/fonts/be-vietnam-regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="opening-scene" id="opening-scene" data-state="idle" aria-labelledby="album-title">
+      <div class="environment" aria-hidden="true">
+        <div class="ambient-light"></div>
+        <div class="bokeh bokeh--one"></div><div class="bokeh bokeh--two"></div>
+        <div class="bokeh bokeh--three"></div><div class="bokeh bokeh--four"></div>
+        <div class="petals" id="petals"></div>
+        <div class="grain"></div>
+      </div>
+
+      <header class="scene-header">
+        <a class="wordmark" href="/" aria-label="Chuyện chúng mình — cảnh mở đầu">
+          <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 25S5 18.5 5 11.7C5 6.1 13 4.6 16 10c3-5.4 11-3.9 11 1.7C27 18.5 16 25 16 25Z" stroke="currentColor" stroke-width="1.25"/><path d="m20.5 3.5 1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1 1-2.5Z" fill="currentColor"/></svg>
+          <span>chuyện chúng mình<span class="wordmark-dot">.</span></span>
+        </a>
+        <span class="anniversary-label"><span class="tiny-star" aria-hidden="true">✦</span> KỶ NIỆM MỘT NĂM</span>
+      </header>
+
+      <div class="scene-content">
+        <div class="scene-eyebrow"><span></span> MỖI KHOẢNH KHẮC, MỘT ĐIỀU KỲ DIỆU <span></span></div>
+
+        <div class="album-stage" id="album-stage">
+          <div class="stage-halo" aria-hidden="true"></div>
+          <div class="orbit orbit--one" aria-hidden="true"></div>
+          <div class="orbit orbit--two" aria-hidden="true"></div>
+          <span class="stage-star stage-star--one" aria-hidden="true">✧</span>
+          <span class="stage-star stage-star--two" aria-hidden="true">✦</span>
+          <span class="stage-star stage-star--three" aria-hidden="true">✧</span>
+          <span class="stage-star stage-star--four" aria-hidden="true">✦</span>
+          <div class="book-shadow" aria-hidden="true"></div>
+          <div class="book-arrival">
+            <div class="book-float">
+              <div class="book-position">
+                <button class="album" id="album" type="button" aria-label="Mở album Một năm thương nhau" aria-describedby="invitation" aria-expanded="false">
+                  <span class="book-back" aria-hidden="true"></span>
+                  <span class="book-spine" aria-hidden="true"><span>một năm thương nhau</span><i></i></span>
+                  <span class="page-block" aria-hidden="true">
+                    <span class="page-face"><span class="endpaper-frame"></span><svg class="endpaper-heart" viewBox="0 0 64 64" fill="none"><path d="M32 49S12 37 12 25c0-12 16-15 20-4 4-11 20-8 20 4 0 12-20 24-20 24Z" stroke="currentColor" stroke-width="1"/></svg><span class="endpaper-note">Câu chuyện của chúng mình<br/><i>đang khẽ bắt đầu…</i></span><span class="endpaper-number">01</span></span>
+                    <span class="page-edge page-edge--right"></span>
+                    <span class="page-edge page-edge--bottom"></span>
+                    <span class="page-edge page-edge--top"></span>
+                  </span>
+                  <span class="ribbon" aria-hidden="true"></span>
+                  <span class="book-light" aria-hidden="true"></span>
+                  <span class="front-cover" id="front-cover">
+                    <span class="cover-inside" aria-hidden="true"><span class="inside-border"></span><span class="inside-flower">✧</span></span>
+                    <span class="cover-face">
+                      <span class="cover-grain" aria-hidden="true"></span>
+                      <span class="cover-border" aria-hidden="true"></span>
+                      <svg class="cover-corner cover-corner--tl" viewBox="0 0 45 45" fill="none" aria-hidden="true"><path d="M3 41V13C3 7 7 3 13 3h28M9 29V14c0-3 2-5 5-5h15M3 20C18 21 21 18 20 3M13 13c5 1 9 5 10 10-5-1-9-5-10-10Z" stroke="currentColor" stroke-width=".8"/></svg>
+                      <svg class="cover-corner cover-corner--tr" viewBox="0 0 45 45" fill="none" aria-hidden="true"><path d="M3 41V13C3 7 7 3 13 3h28M9 29V14c0-3 2-5 5-5h15M3 20C18 21 21 18 20 3M13 13c5 1 9 5 10 10-5-1-9-5-10-10Z" stroke="currentColor" stroke-width=".8"/></svg>
+                      <svg class="cover-corner cover-corner--bl" viewBox="0 0 45 45" fill="none" aria-hidden="true"><path d="M3 41V13C3 7 7 3 13 3h28M9 29V14c0-3 2-5 5-5h15M3 20C18 21 21 18 20 3M13 13c5 1 9 5 10 10-5-1-9-5-10-10Z" stroke="currentColor" stroke-width=".8"/></svg>
+                      <svg class="cover-corner cover-corner--br" viewBox="0 0 45 45" fill="none" aria-hidden="true"><path d="M3 41V13C3 7 7 3 13 3h28M9 29V14c0-3 2-5 5-5h15M3 20C18 21 21 18 20 3M13 13c5 1 9 5 10 10-5-1-9-5-10-10Z" stroke="currentColor" stroke-width=".8"/></svg>
+                      <span class="cover-eyebrow">CHƯƠNG ĐẦU TIÊN</span>
+                      <svg class="cover-emblem" viewBox="0 0 100 88" fill="none" aria-hidden="true">
+                        <path d="M50 70S27 56 27 41c0-13 18-17 23-4 5-13 23-9 23 4 0 15-23 29-23 29Z" stroke="currentColor" stroke-width="1.2"/>
+                        <path d="M28 67C8 57 12 30 24 23M72 67c20-10 16-37 4-44M20 50c-8 0-10-6-10-6s8-2 10 6Zm-1-12c-8-3-6-10-6-10s8 1 6 10Zm5-10c-6-6-1-12-1-12s7 5 1 12Zm56 22c8 0 10-6 10-6s-8-2-10 6Zm1-12c8-3 6-10 6-10s-8 1-6 10Zm-5-10c6-6 1-12 1-12s-7 5-1 12Z" stroke="currentColor" stroke-width=".8"/>
+                        <path d="m50 9 1.7 5.3L57 16l-5.3 1.7L50 23l-1.7-5.3L43 16l5.3-1.7L50 9Z" fill="currentColor"/>
+                        <path d="M33 77h34M43 81h14" stroke="currentColor" stroke-width=".8"/>
+                      </svg>
+                      <span class="cover-title" id="album-title">Một năm<br/><em>thương nhau</em></span>
+                      <span class="cover-rule" aria-hidden="true"><i></i>✧<i></i></span>
+                      <span class="cover-dedication">Dành riêng cho chúng ta</span>
+                      <span class="cover-date">02.11.2025 <span>—</span> 02.11.2026</span>
+                      <span class="cover-sheen" aria-hidden="true"></span>
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="magic-particles" id="magic-particles" aria-hidden="true"></div>
+          <div class="opening-burst" aria-hidden="true"></div>
+        </div>
+
+        <div class="invitation-block">
+          <p class="invitation" id="invitation">Có một chút phép màu,<br class="mobile-break"/> tên là chúng mình.</p>
+          <button class="open-button" id="open-button" type="button">
+            <svg class="button-spark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m12 3 2.3 6.7L21 12l-6.7 2.3L12 21l-2.3-6.7L3 12l6.7-2.3L12 3ZM20 2v4m-2-2h4" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            <span id="button-label">Mở câu chuyện của chúng mình</span>
+            <svg class="button-arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="interaction-hint" id="interaction-hint">Chạm vào cuốn sách để bắt đầu</p>
+          <p class="scene-status sr-only" id="scene-status" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <footer class="scene-footer">
+        <span class="footer-note">Một năm đã qua. Còn mãi về sau.</span>
+        <span class="footer-center" aria-hidden="true">EST. 02.11.2025</span>
+        <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" aria-label="Tạm dừng chuyển động">
+          <svg class="motion-icon motion-icon--pause" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10m6-10v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg class="motion-icon motion-icon--play" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m7 4 9 6-9 6V4Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          <span class="motion-toggle-label">Tạm dừng</span>
+        </button>
+      </footer>
+    </main>
+    <noscript><p class="noscript-note">Bật JavaScript để mở cuốn album dành riêng cho chúng ta.</p></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
